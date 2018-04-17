@@ -1,0 +1,53 @@
+.OverlayBlock {
+   overflow: visible;
+   border-radius: 3px;
+   width: 300px;
+   overflow: auto;
+   background-color: white;
+   padding: 10px 25px 25px;
+   margin-bottom: 10px;
+   @include box-shadow(-5px 0px 10px 0px rgba($dark-color, 0.25));
+}
+
+.OverlayBlock--compressed {
+   float: right;
+   border-radius: 3px;
+   height: 40px;
+   width: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 10px;
+   clear: both;
+   color: $light-color;
+   @include box-shadow(-5px 0px 10px 0px rgba($dark-color, 0.25));
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.OverlayBlock__Pin {
+   float: right;
+   clear: both;
+   margin-bottom: 5px;
+   transform: rotateZ(-90deg);
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.OverlayBlock__IconBlock {
+   color: $light-color;
+}
+
+.OverlayBlock__Header {
+   text-align: center;
+   clear: both;
+}
+
+.OverlayBlock__Header__Title {
+   margin-bottom: 10px;
+}
+
+.OverlayBlock__Header__Body {
+}

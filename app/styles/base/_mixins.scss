@@ -1,0 +1,29 @@
+@mixin box-shadow($vals) {
+   -webkit-box-shadow: $vals;
+   -moz-box-shadow: $vals;
+   box-shadow: $vals;
+}
+
+@mixin app-font($weight) {
+   font-family: $font-name, sans-serif;
+   color: $font-color;
+   @if $weight == "bold" {
+      font-weight: 600;
+   }
+   @if $weight == "regular" {
+      font-weight: 400;
+   }
+}
+
+@mixin color-block($color) {
+   background-color: rgba($color, 0.2);
+   border: 1px solid $color;
+   border-radius: 3px;
+}
+
+@mixin basic-hover {
+   &:hover {
+      opacity: 0.75;
+      cursor: pointer;
+   }
+}

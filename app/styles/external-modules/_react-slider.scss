@@ -1,0 +1,24 @@
+// NOTE: use `ReactSlider` class not `time-slider` (deprecated)
+.time-slider,
+.ReactSlider {
+   .rc-slider-rail {
+      background-color: $grey-md;
+   }
+   .rc-slider-track {
+      background-color: $accent-color;
+   }
+   .rc-slider-handle {
+      background-color: $grey-lt;
+      border-color: $accent-color;
+      &:hover {
+         background-color: $grey-md;
+      }
+   }
+   &.rc-slider-disabled .rc-slider-handle {
+      border-color: $grey-md;
+   }
+}
+
+.slider-value {
+   margin: 15px 0;
+}

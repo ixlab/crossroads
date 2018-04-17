@@ -1,0 +1,45 @@
+// font
+$font-color: #232323;
+$font-color-alt: #fff;
+$font-name: "Titillium Web";
+
+// color palette
+$grey-dk: #cecece;
+$grey-md: #ededed;
+$grey-lt: #fafafa;
+$accent-color: #4a5bdc;
+$accent-color-2: #aaadc7;
+$accent-color-dk: darken($accent-color, 15%);
+$light-color: #ffffff;
+$translucent-bg-color: rgba($light-color, 0.7);
+$dark-color: #232323;
+
+// service region colors
+$included-color: #4d9ded;
+$excluded-color: #fc5235;
+$parking-color: #50e372;
+$landuse-color: #ff7200;
+
+// miscallaneous colors
+$yellow-color: #ffde38;
+
+// status colors
+$info-color: $included-color;
+$success-color: #58c002;
+$warning-color: $yellow-color;
+$error-color: $excluded-color;
+
+// dimensions
+$control-width: 460px;
+$control-buffer: 10px;
+$data-text-overlay-max-height: 250px;
+$graph-height: 200px;
+$graph-width: 300px;
+$graph-border: 2px;
+
+// spacing
+$sp-xs: 5px;
+$sp-sm: 10px;
+$sp-md: 15px;
+$sp-lg: 20px;
+$sp-xl: 25px;

@@ -1,0 +1,11 @@
+{
+   "distributionGraphConfig": {
+      "tripTimeIntervals": 10,
+      "tripDistanceIntervals": 1,
+      "minimumPrevelanceCutoff": 0.01
+   },
+   "tripInformationSliderConfig": {
+      "maxDistance": 60,
+      "maxTime": 60
+   }
+}

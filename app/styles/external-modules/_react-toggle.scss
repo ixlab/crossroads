@@ -1,0 +1,30 @@
+@import "~react-toggle/style.css";
+
+.react-toggle-track {
+   background-color: $grey-dk;
+}
+
+.react-toggle--checked .react-toggle-track {
+   background-color: $accent-color;
+}
+
+.react-toggle-thumb {
+   border-color: $grey-dk;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+   border-color: $accent-color-dk;
+}
+
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+   background-color: $grey-md;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+   background-color: $accent-color-dk;
+}
+
+.react-toggle--focus .react-toggle-thumb,
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
+   @include box-shadow(0px 0px 15px 0px rgba($accent-color, 0.25));
+}

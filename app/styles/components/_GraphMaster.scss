@@ -1,0 +1,82 @@
+.GraphMaster {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 10px;
+   overflow: auto;
+   text-align: right;
+   pointer-events: none;
+}
+
+.controls-wrapper ~ .GraphMaster {
+   right: 470px;
+   padding-right: 0;
+}
+
+.GraphMaster__Toggle {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 3px;
+   background-color: $translucent-bg-color;
+   margin-left: calc(100% - 40px);
+   transition: 150ms all;
+   pointer-events: all;
+   @include box-shadow(-5px 0px 10px 0px rgba($dark-color, 0.25));
+   &:hover {
+      cursor: pointer;
+      transition: 200ms all;
+      background-color: $light-color;
+   }
+}
+
+.GraphMaster__Content {
+   height: $graph-height;
+   width: 100%;
+   background-color: $light-color;
+   overflow-y: hidden;
+   overflow-x: scroll;
+   white-space: nowrap;
+   background-color: rgba(0, 0, 0, 0);
+   border-radius: 3px;
+   margin-top: 10px;
+   pointer-events: all;
+}
+
+.Graph {
+   position: relative;
+   background-color: rgba(255, 255, 255, 1);
+   height: #{$graph-height - $graph-border * 5};
+   width: $graph-width;
+   padding: 10px;
+   display: inline-block;
+   opacity: 0.75;
+   margin-right: 15px;
+   border-radius: 3px;
+   transition: 150ms all;
+   border: $graph-border solid $grey-md;
+   &:last-of-type {
+      margin-right: 0;
+   }
+   &:hover {
+      border: 2px solid $accent-color;
+      opacity: 1;
+      transition: 200ms all;
+   }
+   &:hover .Graph__Download {
+      display: block;
+   }
+}
+
+.Graph__Download {
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   display: none;
+   &:hover {
+      cursor: pointer;
+   }
+}

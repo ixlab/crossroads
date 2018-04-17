@@ -1,0 +1,20 @@
+$react-dates-color-primary: $accent-color;
+$react-dates-color-primary-shade-1: lighten($accent-color, 10%);
+$react-dates-color-primary-shade-2: lighten($accent-color, 12.5%);
+$react-dates-color-primary-shade-3: lighten($accent-color, 15%);
+$react-dates-color-primary-shade-4: lighten($accent-color, 17.5%);
+$react-dates-color-secondary: $light-color;
+$react-dates-color-focus: $accent-color;
+$react-dates-color-text-focus: $light-color;
+
+.DateRangePickerInput {
+   border: 2px solid $grey-md !important;
+   border-radius: 3px !important;
+}
+
+.DateInput__input {
+   cursor: pointer !important;
+}
+
+@import "~react-dates/css/variables.scss";
+@import "~react-dates/css/styles.scss";

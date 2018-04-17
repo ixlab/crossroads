@@ -1,0 +1,36 @@
+.file-type-list {
+   align-self: flex-start;
+   margin: 10px 0;
+}
+
+.file-upload-wrapper {
+   width: 100%;
+   .file-drop {
+      width: 100%;
+      height: 100px;
+      margin: 15px auto;
+      border: 1px solid $grey-dk;
+      border-radius: 3px;
+      background-color: $grey-md;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      &.dragging-over,
+      &:hover {
+         cursor: pointer;
+         background-color: $accent-color;
+         div {
+            color: $light-color;
+            .dark-icon {
+               fill: $light-color;
+            }
+         }
+      }
+   }
+}
+
+.data-configuration-wrapper {
+   width: 100%;
+   margin: 25px auto 10px;
+}

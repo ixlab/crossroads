@@ -1,0 +1,37 @@
+.notification-wrapper {
+   position: absolute;
+   z-index: 4;
+   max-width: 300px;
+   bottom: $control-buffer;
+   right: #{$control-width + $control-buffer};
+   border-radius: 3px;
+   padding: 15px;
+   background-color: $light-color;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   @include box-shadow(-5px 0px 10px 0px rgba($dark-color, 0.25));
+   p {
+      flex-grow: 2;
+      margin: 0 15px;
+   }
+   .dark-icon {
+      cursor: pointer;
+   }
+   .info-icon {
+      fill: $info-color;
+   }
+   .success-icon {
+      fill: $success-color;
+   }
+   .warning-icon {
+      fill: $warning-color;
+   }
+   .error-icon {
+      fill: $error-color;
+   }
+}
+
+.departure-notification + .arrival-notification {
+   bottom: 100px;
+}

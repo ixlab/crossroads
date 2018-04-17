@@ -1,0 +1,26 @@
+.block-selection {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   .dow-block {
+      flex-grow: 1;
+      height: 45px;
+      line-height: 45px;
+      outline: 2px solid $grey-md;
+      margin-top: 2px;
+      margin-left: 2px;
+      text-align: center;
+      &.active {
+         background-color: $accent-color;
+         color: $light-color;
+         outline-color: $accent-color;
+         &:hover {
+            background-color: $accent-color !important;
+         }
+      }
+      &:hover {
+         background-color: $grey-md;
+         cursor: pointer;
+      }
+   }
+}

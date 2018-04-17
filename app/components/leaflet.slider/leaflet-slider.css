@@ -1,0 +1,43 @@
+.leaflet-slider {
+   position: absolute;
+   z-index: 999;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   border-right: 2px solid #d5d5d5;
+}
+
+.leaflet-slider-handle {
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%);
+   border-radius: 50%;
+   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNzkyIDg5NnEwIDI2LTE5IDQ1bC0yNTYgMjU2cS0xOSAxOS00NSAxOXQtNDUtMTktMTktNDV2LTEyOGgtMTAyNHYxMjhxMCAyNi0xOSA0NXQtNDUgMTktNDUtMTlsLTI1Ni0yNTZxLTE5LTE5LTE5LTQ1dDE5LTQ1bDI1Ni0yNTZxMTktMTkgNDUtMTl0NDUgMTkgMTkgNDV2MTI4aDEwMjR2LTEyOHEwLTI2IDE5LTQ1dDQ1LTE5IDQ1IDE5bDI1NiAyNTZxMTkgMTkgMTkgNDV6Ii8+PC9zdmc+Cg==");
+   background-repeat: no-repeat;
+   background-size: 50%;
+   background-position: center;
+   background-color: #fff;
+   z-index: 999999; /* handle should appear above all overlay */
+   border: 2px solid #d5d5d5;
+   -webkit-box-shadow: -5px 0px 10px 0px rgba(#232323, 0.45);
+   -moz-box-shadow: -5px 0px 10px 0px rgba(#232323, 0.45);
+   box-shadow: -5px 0px 10px 0px rgba(#232323, 0.45);
+}
+
+.leaflet-slider-handle:hover,
+.leaflet-slider-handle.active {
+   cursor: pointer !important;
+}
+
+.leaflet-slider-content {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+.leaflet-slider-content .leaflet-slider-content--image {
+   position: absolute;
+}

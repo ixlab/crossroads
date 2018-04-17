@@ -1,0 +1,239 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   @extend .bold;
+}
+
+a,
+span {
+   color: inherit !important;
+}
+
+.no-underline {
+   text-decoration: none;
+}
+
+.dark-icon {
+   fill: $dark-color;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.reg-spacer {
+   height: 0;
+   border: none;
+   border-top: 1px solid $grey-dk;
+   width: 100%;
+   max-width: 100px;
+   margin: 15px auto;
+   display: block;
+}
+
+.long-spacer {
+   width: 100%;
+   border: 1px solid $grey-md;
+   margin: 5px 0;
+}
+
+.top-spacing {
+   margin-top: 15px !important;
+}
+
+.top-spacing-lg {
+   margin-top: 25px !important;
+}
+
+.bottom-spacing {
+   margin-bottom: 15px !important;
+}
+
+.bold {
+   @include app-font("bold");
+}
+
+.form-control {
+   input {
+      margin-right: 10px;
+      border-radius: 3px;
+      border: 2px solid $grey-md;
+      padding: 5px 10px;
+      font-size: 14px;
+      &::placeholder {
+         color: $grey-md;
+      }
+   }
+   select {
+      height: 35px;
+      font-size: 14px;
+      border: 2px solid #ededed;
+      border-radius: 3px;
+      background: white;
+      option {
+         font-size: 14px;
+      }
+   }
+   &.flat-input {
+      display: flex;
+      input {
+         flex-grow: 2;
+      }
+      select {
+         flex-grow: 2;
+      }
+   }
+   textarea {
+      width: 100%;
+      height: 115px;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 2px solid $grey-md;
+      resize: vertical;
+   }
+}
+
+.block {
+   border-radius: 3px;
+   margin-top: 10px;
+   padding: 5px 10px;
+   width: 100%;
+   text-align: center;
+}
+
+.block-info {
+   @extend .block;
+   background: rgba($accent-color, 0.15);
+   border: 1px solid $accent-color;
+   color: $accent-color;
+}
+
+.block-error {
+   @extend .block;
+   background: rgba($excluded-color, 0.15);
+   border: 1px solid $excluded-color;
+   color: $excluded-color;
+}
+
+.block-warn {
+   @extend .block;
+   background: rgba($yellow-color, 0.15);
+   border: 1px solid $yellow-color;
+   color: $yellow-color;
+}
+
+.block-success {
+   @extend .block;
+   background: rgba($success-color, 0.15);
+   border: 1px solid $success-color;
+   color: $success-color;
+}
+
+.section-title {
+   font-size: 10px;
+   text-transform: uppercase;
+   color: $grey-dk;
+}
+
+.jumbotron {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $grey-md;
+   background-image: url("/public/images/topography.svg");
+   .jumbotron-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      border-radius: 5px;
+      background-color: white;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      @include box-shadow(-6px 6px 20px 0px rgba($dark-color, 0.25));
+      .jumbotron-header {
+         width: 100%;
+         * {
+            text-align: center;
+         }
+      }
+   }
+   .jumbotron-scrollable {
+      position: absolute;
+      padding: 100px 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+      .jumbotron-content {
+         margin: 0 auto;
+      }
+   }
+}
+
+// BEM styles
+.Icon--light {
+   fill: $light-color;
+}
+
+.Icon--interactive {
+   fill: $grey-dk;
+   &:hover {
+      fill: $accent-color;
+      cursor: pointer;
+   }
+}
+
+.IconPopover {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.IconPopover__Popover {
+   top: 30px;
+   display: none;
+   position: absolute;
+   z-index: 1;
+   background-color: $light-color;
+   font-size: 14px;
+   padding: 15px;
+   border-radius: 3px;
+   @include box-shadow(-3px 3px 25px 0px rgba($dark-color, 0.25));
+   &:hover {
+      display: block;
+      cursor: pointer;
+   }
+}
+
+.IconPopover__Icon {
+   margin-left: 10px;
+   &:hover + .IconPopover__Popover {
+      display: block;
+   }
+}
+
+.IconButton {
+   @extend .btn;
+   height: 43px;
+   width: 43px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+}
+
+.IconButton__Icon {
+   fill: $dark-color;
+}

@@ -1,0 +1,29 @@
+.popup {
+   min-width: 185px;
+   .content-row {
+      display: flex;
+      justify-content: flex-start;
+      .content-block {
+         flex-grow: 1;
+         flex-basis: 0;
+         padding-left: 10px;
+         &:first-of-type {
+            padding-left: 0;
+         }
+      }
+   }
+   .content-block {
+      & p {
+         margin: 0 !important;
+      }
+      .content-title {
+         @extend .section-title;
+         margin-top: 7px !important;
+      }
+   }
+   .vin:hover {
+      cursor: pointer;
+      color: $accent-color;
+      text-decoration: underline;
+   }
+}

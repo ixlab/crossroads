@@ -1,0 +1,23 @@
+@each $type in ("margin", "padding") {
+   @each $dimen in ("top", "right", "bottom", "left") {
+      .#{$type}-#{$dimen}--xs {
+         #{$type}-#{$dimen}: $sp-xs !important;
+      }
+
+      .#{$type}-#{$dimen}--sm {
+         #{$type}-#{$dimen}: $sp-sm !important;
+      }
+
+      .#{$type}-#{$dimen}--md {
+         #{$type}-#{$dimen}: $sp-md !important;
+      }
+
+      .#{$type}-#{$dimen}--lg {
+         #{$type}-#{$dimen}: $sp-lg !important;
+      }
+
+      .#{$type}-#{$dimen}--xl {
+         #{$type}-#{$dimen}: $sp-xl !important;
+      }
+   }
+}

@@ -1,0 +1,74 @@
+.smart-select {
+   position: relative;
+   font-size: 12px;
+   &:hover .options-wrapper {
+      visibility: visible;
+      transition-delay: 150ms;
+   }
+   &:hover .selection-wrapper {
+      border-radius: 3px 3px 0 0;
+      transition-delay: 150ms;
+   }
+   .selection-wrapper {
+      padding: 5px;
+      width: 100%;
+      border: 2px solid $grey-md;
+      border-radius: 3px;
+      overflow: auto;
+      max-height: 120px;
+      &:hover {
+         cursor: pointer;
+      }
+      .no-selection {
+         font-size: 14px;
+         color: $grey-md;
+         margin: 5px;
+      }
+      .selection {
+         padding: 10px;
+         margin: 5px;
+         width: calc(50% - 10px);
+         float: left;
+         background-color: $accent-color;
+         border-radius: 3px;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         color: $light-color;
+         .close-icon {
+            margin-left: 8px;
+            fill: $light-color;
+            &:hover {
+               cursor: pointer;
+            }
+         }
+      }
+   }
+   .options-wrapper {
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      max-height: 150px;
+      overflow: auto;
+      background-color: $grey-lt;
+      z-index: 1;
+      border-radius: 0 0 3px 3px;
+      transition-delay: 150ms;
+      border: 2px solid $grey-md;
+      border-top: none;
+      @include box-shadow(-3px 3px 10px 0px rgba($dark-color, 0.25));
+      .option {
+         display: flex;
+         padding: 7.5px 15px;
+         border-bottom: 2px solid $grey-md;
+         align-items: center;
+         justify-content: space-between;
+         &:hover {
+            cursor: pointer;
+            background-color: $grey-md;
+         }
+      }
+   }
+}

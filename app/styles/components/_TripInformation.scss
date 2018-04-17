@@ -1,0 +1,14 @@
+.TripInformation--block {
+   border: 2px solid $grey-md;
+   border-radius: 3px;
+   padding: 15px;
+   &:first-of-type {
+      margin-bottom: 15px;
+   }
+   h5 {
+      margin-bottom: 15px;
+   }
+   p {
+      margin-top: 15px;
+   }
+}

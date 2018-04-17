@@ -1,0 +1,32 @@
+.ColorPicker {
+   display: flex;
+   flex-grow: 2;
+   flex-direction: column;
+   align-items: center;
+}
+
+.ColorPicker__Button {
+   color: $light-color !important;
+   width: 100%;
+}
+
+.ColorPicker__Icon {
+   fill: $light-color;
+}
+
+.ColorPicker__Picker {
+   margin-top: 15px;
+   border: 2px solid $grey-md;
+   border-radius: 3px;
+   padding: 0 15px 15px;
+   width: 100%;
+   text-align: right;
+}
+
+.ColorPicker__ClosePicker {
+   margin-top: 7.5px;
+   margin-bottom: 10px;
+   &:hover {
+      cursor: pointer;
+   }
+}

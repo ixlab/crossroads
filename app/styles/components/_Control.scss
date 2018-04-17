@@ -1,0 +1,111 @@
+// Containers ---------------------------------
+.Control--main {
+   position: relative;
+   padding: 15px;
+   border: 2px solid $grey-md;
+   border-radius: 3px;
+   background-color: $light-color;
+   margin-bottom: 15px;
+   transition: 150ms all;
+   opacity: 0.7;
+   &:hover {
+      border: 2px solid $accent-color;
+      border-radius: 3px;
+      opacity: 1;
+      transition: 200ms all;
+   }
+}
+
+.Control--sub {
+   position: relative;
+   margin-bottom: 25px;
+   &:last-of-type {
+      margin-bottom: 0;
+   }
+}
+
+.Control--supersub {
+   position: relative;
+   border: 2px solid $grey-md;
+   border-radius: 3px;
+   padding: 15px;
+   &:first-of-type {
+      margin-bottom: 15px;
+   }
+   & + .Control--supersub {
+      margin-top: 15px;
+   }
+}
+
+// Titles ---------------------------------
+.Control__Title--main {
+   @include app-font("bold");
+   margin-bottom: 10px;
+   font-size: 1.11rem;
+}
+
+.Control__Title--sub {
+   @include app-font("bold");
+   margin-bottom: 15px;
+   font-size: 1.05rem;
+}
+
+.Control__Title--supersub {
+   @include app-font("bold");
+   margin-bottom: 15px;
+   font-size: 0.83rem;
+}
+
+// Bodies ---------------------------------
+.Control__Body--supersub {
+   margin-top: 15px;
+   font-size: 0.83rem;
+}
+
+// Toggle
+.Control__Toggle {
+   height: 17px;
+   width: 17px;
+   border-radius: 3px;
+   background-color: $grey-md;
+   position: absolute;
+   top: 0;
+   right: 15px;
+   text-align: center;
+   line-height: 15px;
+   font-weight: 600;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+// Undo-Redo Controls
+.Control__UndoRedo {
+   position: absolute;
+   display: flex;
+   right: 50px;
+   top: 9px;
+   width: 50px;
+   justify-content: space-between;
+}
+
+.Control__Undo:hover,
+.Control__Redo:hover {
+   cursor: pointer;
+}
+
+.Control__Toggle--main {
+   top: 15px;
+}
+
+// Miscellaneous ---------------------------------
+.Control--active {
+   border: 2px solid $accent-color;
+   border-radius: 3px;
+   opacity: 1;
+   transition: 200ms all;
+}
+
+.Control--inactive {
+   opacity: 0.35;
+}

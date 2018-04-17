@@ -1,0 +1,35 @@
+path.leaflet-line {
+   stroke: $dark-color;
+   stroke-width: 2;
+}
+path.leaflet-polygon {
+   fill: $accent-color;
+   stroke: $accent-color;
+   stroke-width: 2;
+   fill-opacity: 0.1;
+   &.inbound-polygon {
+      fill: $included-color;
+      stroke: $included-color;
+   }
+   &.outbound-polygon {
+      fill: $excluded-color;
+      stroke: $excluded-color;
+   }
+}
+div.leaflet-edge {
+   border: 2px solid $light-color;
+   background-color: $accent-color;
+   border-radius: 50%;
+   cursor: move;
+   outline: none;
+   &.for-inbound-polygon {
+      background-color: $included-color;
+   }
+   &.for-outbound-polygon {
+      background-color: $excluded-color;
+   }
+}
+// needed to allow for overlaying heatmaps
+.leaflet-map-pane .leaflet-heatmap-layer {
+   mix-blend-mode: overlay;
+}

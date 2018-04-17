@@ -1,0 +1,9 @@
+.DataOverlayManager {
+   pointer-events: none;
+}
+
+.DataOverlayManager__Polygons,
+.DataOverlayManager__Polylines,
+.DataOverlayManager__Points {
+   position: relative;
+}

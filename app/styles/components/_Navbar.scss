@@ -1,0 +1,43 @@
+.nav-content {
+   width: 100%;
+}
+
+.nav {
+   $nav-h: 50px;
+   $vert-p: 7.5px;
+   $nav-content-sz: #{$nav-h - ($vert-p * 2)};
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   height: $nav-h;
+   background-color: $light-color;
+   padding: #{$vert-p} 15px;
+   z-index: 1;
+   border-bottom: 1px solid $grey-md;
+   @include box-shadow(-5px 0px 10px 0px rgba($dark-color, 0.25));
+   .nav-logo-wrapper {
+      // NOTE: can add a logo here if desired
+      float: left;
+      height: $nav-content-sz;
+      width: $nav-content-sz;
+   }
+   .nav-link-wrapper {
+      float: right;
+      height: $nav-content-sz;
+      display: flex;
+      align-items: center;
+      .nav-link {
+         @extend .no-underline;
+         padding: 0 15px;
+         border-right: 1px solid $grey-md;
+         text-transform: capitalize;
+         display: flex;
+         align-items: center;
+         @include basic-hover;
+         &:last-of-type {
+            border: none;
+         }
+      }
+   }
+}

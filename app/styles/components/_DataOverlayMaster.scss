@@ -1,0 +1,30 @@
+.DataOverlayMaster {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: $control-buffer;
+   pointer-events: none;
+}
+
+.DataOverlayMaster * {
+   pointer-events: all;
+}
+
+.controls-wrapper ~ .DataOverlayMaster {
+   right: $control-width;
+}
+
+.DataOverlayMaster__ManagerTray {
+   height: 100%;
+   float: right;
+   pointer-events: none;
+}
+
+.DataOverlayMaster__ManagerTray--inner {
+   padding-left: 15px;
+   padding-right: 50px;
+   max-height: 100%;
+   overflow: auto;
+}

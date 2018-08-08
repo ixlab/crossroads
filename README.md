@@ -1,4 +1,4 @@
-# Crossroads: Interactive Vehicle Fleet Data Analysis using Touch Screens
+# Crossroads: Interactive Vehicle Fleet Data Analysis
 
 Dan Arters, Trey Hakanson, Arnab Nandi
 

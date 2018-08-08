@@ -1,14 +1,10 @@
-# Crossroads
-
-## Overview
-
-Interactive Vehicle Fleet Data Analysis using Touch Screens
+# Crossroads: Interactive Vehicle Fleet Data Analysis using Touch Screens
 
 Dan Arters, Trey Hakanson, Arnab Nandi
 
-![Crossroads Screenshot](./public/images/crossroads-screenshot.png)
+<img src="./public/images/crossroads-anim.gif" align="right" /> Crossroads is a self-serve interactive data analytics platform for vehicle trips, V2X and related spatiotemporal datasets. Existing platforms are either not tailored to the intricacies of spatiotemporal datasets, or are not able to display results real time. Due to the commercial and closed-source nature of many GIS tools, it is very hard to customize or extend them for domain-specific research & analysis. Crossroads is a self-serve open-source stack for exploring spatiotemporal datasets using direct manipulation. Crossroads allows users to intuitively construct complex queries, and display the results real time, gives analysts an easy path to drawing insights from any spatio-temporal dataset. 
 
-![Crossroads Animation](./public/images/crossroads-anim.gif)
+![Crossroads Screenshot](./public/images/crossroads-screenshot.png)
 
 A Node + React application to query spatiotemporal data using an interactive and intuitive query paned. The application features full ES6 stage-1 capabilities on the API and frontend. The frontend is compiled using Webpack and the backend is built using the babel-cli (babel-node) and Nodemon in development, and PM2 in production.
 

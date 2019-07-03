@@ -20,7 +20,7 @@
    "author": "Trey Hakanson and Dan Arters",
    "license": "Apache-2.0",
    "dependencies": {
-      "axios": "^0.15.2",
+      "axios": "^0.18.1",
       "babel-polyfill": "^6.23.0",
       "body-parser": "^1.17.2",
       "chart.js": "^2.6.0",

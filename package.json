@@ -23,7 +23,7 @@
       "axios": "^0.18.1",
       "babel-polyfill": "^6.23.0",
       "body-parser": "^1.17.2",
-      "chart.js": "^2.6.0",
+      "chart.js": "^2.9.4",
       "clipper-lib": "^6.2.1",
       "crossfilter": "^1.3.12",
       "ejs": "^2.5.7",

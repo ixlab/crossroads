@@ -6,7 +6,7 @@ Dan Arters, Trey Hakanson, Arnab Nandi
 
 ![Crossroads Screenshot](./public/images/crossroads-screenshot.png)
 
-A Node + React application to query spatiotemporal data using an interactive and intuitive query paned. The application features full ES6 stage-1 capabilities on the API and frontend. The frontend is compiled using Webpack and the backend is built using the babel-cli (babel-node) and Nodemon in development, and PM2 in production.
+A Node + React application to query spatiotemporal data using an interactive and intuitive query panel. The application features full ES6 stage-1 capabilities on the API and frontend. The frontend is compiled using Webpack and the backend is built using the babel-cli (babel-node) and Nodemon in development, and PM2 in production.
 
 Note that this project utilizes the [yarn](https://yarnpkg.com/en/) package manager, but `npm` will also suffice.
 
